@@ -27,3 +27,8 @@ $(document).ready(function(){
 	$('.discount-value').html(discount);
 });
 
+$(document).ready(function(){
+	setTimeout(function(){
+		$('.desc-text').css('height', $('.desc-img').height()+'px');
+	}, 500);
+});

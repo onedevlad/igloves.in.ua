@@ -11,21 +11,98 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Stickymp.in.ua</title>
+    <title>iGloves.in.ua</title>
   </head>
   <body>
     <div class="container-fluid screen-1">
       <div class="overlay">
         <div class="row header-info">
           <div class="col-md-4 header-info-left pull-left"><img src="images/np.png" alt=""><span>Доставка по всей Украине</span></div>
-          <div class="col-md-2 pull-right header-info-right"><span>+38 (066) 881 06 22</span>
-            <button class="order">Заказать сейчас</button>
+          <div class="col-md-2 pull-right header-info-right"><span>+38 (066) 881 06 22</span></div>
+        </div>
+        <div class="row header">
+          <h1 class="heading">Заголовок</h1>
+          <div class="col-md-5 video-wrapper"></div>
+          <div class="col-md-4 col-md-offset-3 header-form-wrapper">
+            <form method="POST">
+              <h3>Закажите сейчас</h3>
+              <table>
+                <tr>
+                  <td class="left">Ваше имя:</td>
+                  <td>
+                    <input name="name">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">Ваша фамилия:</td>
+                  <td>
+                    <input name="surname">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">Номер телефона:</td>
+                  <td>
+                    <input id="phone">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">Цвет перчаток:</td>
+                  <td>
+                    <select name="color">
+                      <option>Черный</option>
+                      <option>Черный</option>
+                      <option>Черный</option>
+                      <option>Черный</option>
+                      <option>Черный</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <button class="header-form-order">Заказать сейчас</button>
+            </form>
           </div>
         </div>
-        <div class="row title"><span class="main-title">Sticky Map</span><span class="secondary-title">Надоел бардак в машине?</span><span class="secondary-title">"Липкие" коврики решат эту проблему раз и навсегда!</span></div>
       </div>
     </div>
     <div class="container-fluid screen-2">
+      <div class="container">
+        <h1>Преимущества перчаток</h1>
+        <div class="row properties">
+          <div class="col-md-3"><img src="images/devices.png" alt=""><span> <b>iGlove </b>- это универсальные перчатки, которые подойдут к любому устройству</span></div>
+          <div class="col-md-3"><img src="images/energy.png" alt=""><span>Благодаря уникальной технологии Touch Silver энергия от пальцев легко проходит к экрану </span></div>
+          <div class="col-md-3"><img src="images/ok.png" alt=""><span>Многолетний опыт использования <b>iGlove </b>показывает качество, практичность и<br>удобство таких перчаток</span></div>
+          <div class="col-md-3"><img src="images/glove.png" alt=""><span>Универсальный размер</span></div>
+        </div>
+      </div>
+      <div class="row divider">
+        <div class="col-lg-12">
+          <div class="left"></div>
+          <div class="inner"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid screen-3">
+      <h1>Характеристики перчаток</h1>
+      <div class="row desc">
+        <div class="hidden-xs hidden-sm line line-1"></div>
+        <div class="hidden-xs hidden-sm line line-2"></div>
+        <div class="hidden-xs hidden-sm line line-3"></div>
+        <div class="hidden-xs hidden-sm line line-4"></div>
+        <div class="col-sm-3 hidden-xs hidden-sm desc-text"><span class="desc-text-1">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-3">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div>
+        <div class="col-sm-6 col-sm-offset-3 col-md-offset-0 desc-img"><img src="images/gloves-benefits.png"></div>
+        <div class="col-sm-3 hidden-xs hidden-sm desc-text"><span class="desc-text-2">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-4">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div>
+        <div class="col-xs-12 hidden-md hidden-lg"><span class="desc-text-1">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-2">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-3">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-4">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div>
+      </div>
+      <div class="row divider">
+        <div class="col-lg-12">
+          <div class="left"></div>
+          <div class="inner"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid screen-4">
       <div class="row pad-price">
         <div class="col-md-3 col-md-offset-2 col-xs-8 col-xs-offset-3 pad-image"><img src="images/pad.png" alt="" class="pad">
           <div class="discount"><img src="images/discount.png" alt="" class="discount-img">
@@ -53,7 +130,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid screen-3">
+    <div class="container-fluid screen-5">
       <h1>Универсальность и удобство!</h1>
       <div class="row properties">
         <div class="col-md-4 left-column">
@@ -88,7 +165,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid screen-4">
+    <div class="container-fluid screen-6">
       <div class="overlay">
         <div class="benefits">
           <ul>
@@ -100,7 +177,7 @@
         </div>
       </div>
     </div>
-    <div id="order-screen" class="container-fluid screen-5">
+    <div id="order-screen" class="container-fluid screen-7">
       <h1>Закажите коврик-липучку со скидкой</h1>
       <center>
         <form id="form" method="post">

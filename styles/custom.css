@@ -3069,7 +3069,8 @@ input[type="button"].btn-block {
   margin: 0;
   padding: 0;
 }
-.order {
+.order,
+.screen-1 .overlay .header .header-form-wrapper .header-form-order {
   color: #fff;
   background: #c30000;
   outline: none;
@@ -3077,7 +3078,8 @@ input[type="button"].btn-block {
   padding: 0.5em 0.8em;
   text-shadow: 1px 1px 1px #262527;
 }
-.order:hover {
+.order:hover,
+.screen-1 .overlay .header .header-form-wrapper .header-form-order:hover {
   background: #910000;
 }
 .divider {
@@ -3119,7 +3121,7 @@ body {
 }
 body {
   background-image: url("../images/bg.jpg");
-  background-position: 50% 50%;
+  background-position: 50% 40%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -3129,10 +3131,9 @@ body {
 .screen-1 {
   background: transparent;
   padding: 0;
-  height: 100%;
 }
 .screen-1 .overlay {
-  padding: 2%;
+  padding: 2% 5%;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.4);
@@ -3149,46 +3150,191 @@ body {
   margin-left: 5%;
 }
 .screen-1 .overlay .header-info .header-info-right {
+  height: 100%;
   text-align: center;
 }
 .screen-1 .overlay .header-info .header-info-right span {
+  display: inline-block;
   font-weight: bold;
+  margin-top: 12%;
 }
-.screen-1 .overlay .header-info .header-info-right button {
-  margin-top: 5%;
-}
-.screen-1 .overlay .title {
-  text-align: center;
-  position: relative;
-  top: 30%;
-  text-shadow: 1px 1px 1px #262527;
-}
-.screen-1 .overlay .title span {
-  display: block;
+.screen-1 .overlay .header .heading {
+  font-weight: bold;
   color: #fff;
+  font-size: 5em;
+  margin-top: 5%;
+  text-shadow: 1px 1px 1px #262527;
+  text-align: center;
 }
-.screen-1 .overlay .title .main-title {
-  font-size: 4em;
+.screen-1 .overlay .header .video-wrapper {
+  margin-top: 7%;
+  height: 300px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  display: block;
+  background: rgba(0,0,0,0.5);
 }
-.screen-1 .overlay .title .secondary-title {
-  font-size: 1.5em;
+.screen-1 .overlay .header .header-form-wrapper {
+  margin-top: 7%;
+  text-align: center;
+  background: #e6e6e6;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
 }
-.screen-2 .pad-price {
+.screen-1 .overlay .header .header-form-wrapper table {
+  font-size: 1.25em;
+  width: 100%;
+  margin: 7% 0 5% 0;
+}
+.screen-1 .overlay .header .header-form-wrapper table td {
+  text-align: left;
+  padding: 0.2em;
+  width: 50%;
+}
+.screen-1 .overlay .header .header-form-wrapper table td input,
+.screen-1 .overlay .header .header-form-wrapper table td option {
+  display: inline-block;
+  width: 100%;
+  padding: 0.2em;
+}
+.screen-1 .overlay .header .header-form-wrapper .header-form-order {
+  margin: 5% 0;
+  font-size: 1.25em;
+}
+.screen-2 h1 {
+  text-align: center;
+}
+.screen-2 .properties {
+  margin: 10% 0;
+  text-align: center;
+}
+.screen-2 .properties div img {
+  width: 30%;
+}
+.screen-2 .properties div span {
+  display: block;
+  margin-top: 5%;
+  font-size: 1.25em;
+}
+.screen-2 .divider {
+  margin-top: 0;
+}
+@media (max-width: 990px) {
+  .properties div {
+    margin-top: 10%;
+  }
+  .properties div img {
+    width: 20% !important;
+  }
+}
+.screen-3 {
+  position: relative;
+}
+.screen-3 h1 {
+  text-align: center;
+}
+.screen-3 .desc {
+  position: relative;
+  height: 100%;
+  margin: 5% 0;
+}
+.screen-3 .desc .desc-img {
+  overflow: hidden;
+}
+.screen-3 .desc .desc-img img {
+  width: 100%;
+}
+.screen-3 .desc .hidden-md.hidden-lg span {
+  display: block;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.25em;
+}
+.screen-3 .desc .desc-text {
+  position: relative;
+  height: 100%;
+}
+.screen-3 .desc .desc-text span {
+  position: absolute;
+  display: block;
+  font-size: 1.25em;
+  text-align: center;
+}
+.screen-3 .desc .desc-text span.desc-text-1,
+.screen-3 .desc .desc-text span.desc-text-2 {
+  top: 20%;
+}
+.screen-3 .desc .desc-text span.desc-text-3,
+.screen-3 .desc .desc-text span.desc-text-4 {
+  top: 60%;
+}
+.screen-3 .desc .line {
+  width: 22.5%;
+  z-index: 2;
+  height: 2px;
+  background: #262725;
+}
+.screen-3 .desc .line-1 {
+  position: absolute;
+  top: 30%;
+  left: 22.5%;
+  -webkit-transform: rotateZ(15deg);
+  -moz-transform: rotateZ(15deg);
+  -o-transform: rotateZ(15deg);
+  -ms-transform: rotateZ(15deg);
+  transform: rotateZ(15deg);
+}
+.screen-3 .desc .line-2 {
+  position: absolute;
+  top: 30%;
+  right: 22.5%;
+  -webkit-transform: rotateZ(-15deg);
+  -moz-transform: rotateZ(-15deg);
+  -o-transform: rotateZ(-15deg);
+  -ms-transform: rotateZ(-15deg);
+  transform: rotateZ(-15deg);
+}
+.screen-3 .desc .line-3 {
+  position: absolute;
+  top: 60%;
+  left: 22.5%;
+  -webkit-transform: rotateZ(-15deg);
+  -moz-transform: rotateZ(-15deg);
+  -o-transform: rotateZ(-15deg);
+  -ms-transform: rotateZ(-15deg);
+  transform: rotateZ(-15deg);
+}
+.screen-3 .desc .line-4 {
+  position: absolute;
+  top: 60%;
+  right: 22%;
+  -webkit-transform: rotateZ(15deg);
+  -moz-transform: rotateZ(15deg);
+  -o-transform: rotateZ(15deg);
+  -ms-transform: rotateZ(15deg);
+  transform: rotateZ(15deg);
+}
+.screen-3 .divider {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.screen-4 .pad-price {
   margin-top: 5%;
 }
-.screen-2 .pad-price .pad-image .pad {
+.screen-4 .pad-price .pad-image .pad {
   width: 80%;
 }
-.screen-2 .pad-price .pad-image .discount {
+.screen-4 .pad-price .pad-image .discount {
   width: 30%;
   position: absolute;
   right: 5%;
   top: 10%;
 }
-.screen-2 .pad-price .pad-image .discount .discount-img {
+.screen-4 .pad-price .pad-image .discount .discount-img {
   width: 100%;
 }
-.screen-2 .pad-price .pad-image .discount .discount-text {
+.screen-4 .pad-price .pad-image .discount .discount-text {
   z-index: 2;
   display: inline-block;
   position: absolute;
@@ -3199,44 +3345,44 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-.screen-2 .pad-price .pad-text {
+.screen-4 .pad-price .pad-text {
   text-align: center;
 }
-.screen-2 .pad-price .pad-text .old-price,
-.screen-2 .pad-price .pad-text .new-price,
-.screen-2 .pad-price .pad-text button {
+.screen-4 .pad-price .pad-text .old-price,
+.screen-4 .pad-price .pad-text .new-price,
+.screen-4 .pad-price .pad-text button {
   display: block;
 }
-.screen-2 .pad-price .pad-text .old-price {
+.screen-4 .pad-price .pad-text .old-price {
   margin-top: 20%;
   font-size: 1.25em;
 }
-.screen-2 .pad-price .pad-text .old-price .overlined {
+.screen-4 .pad-price .pad-text .old-price .overlined {
   text-decoration: line-through;
 }
-.screen-2 .pad-price .pad-text .new-price {
+.screen-4 .pad-price .pad-text .new-price {
   margin-top: 2%;
   font-size: 6em;
   color: #910000;
 }
-.screen-2 .pad-price .pad-text button {
+.screen-4 .pad-price .pad-text button {
   margin: 20% auto 0 auto;
   font-size: 2em;
 }
-.screen-2 .work-description-title {
+.screen-4 .work-description-title {
   margin-top: 125px;
 }
-.screen-2 .work-description-title h1 {
+.screen-4 .work-description-title h1 {
   text-align: center;
 }
-.screen-2 .work-description {
+.screen-4 .work-description {
   margin-top: 5%;
   text-align: center;
 }
-.screen-2 .work-description div img {
+.screen-4 .work-description div img {
   width: 30%;
 }
-.screen-2 .work-description div span {
+.screen-4 .work-description div span {
   display: block;
   margin-top: 5%;
   font-size: 1.25em;
@@ -3249,27 +3395,27 @@ body {
     width: 20% !important;
   }
 }
-.screen-3 h1 {
+.screen-5 h1 {
   text-align: center;
   margin: 8% 0;
 }
-.screen-3 .properties {
+.screen-5 .properties {
   margin-bottom: 15%;
 }
-.screen-3 .properties .left-column h3,
-.screen-3 .properties .right-column h3 {
+.screen-5 .properties .left-column h3,
+.screen-5 .properties .right-column h3 {
   text-align: center;
   font-weight: bold;
 }
-.screen-3 .properties .left-column table {
+.screen-5 .properties .left-column table {
   margin: 10% 5% 0 5%;
   width: 90%;
   font-size: 1.5em;
 }
-.screen-3 .properties .left-column table td {
+.screen-5 .properties .left-column table td {
   padding: 0.5em 0;
 }
-.screen-3 .properties .left-column h5 {
+.screen-5 .properties .left-column h5 {
   margin: 12% 10% 8% 10%;
   width: 80%;
   font-size: 1.25em;
@@ -3277,38 +3423,38 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.screen-3 .properties .left-column ul {
+.screen-5 .properties .left-column ul {
   line-height: 2em;
   margin-left: 30px;
   font-size: 1.1em;
 }
-.screen-3 .properties .middle-column img {
+.screen-5 .properties .middle-column img {
   width: 100%;
 }
-.screen-3 .properties .right-column {
+.screen-5 .properties .right-column {
   text-align: center;
 }
-.screen-3 .properties .right-column .old-price,
-.screen-3 .properties .right-column .new-price,
-.screen-3 .properties .right-column button {
+.screen-5 .properties .right-column .old-price,
+.screen-5 .properties .right-column .new-price,
+.screen-5 .properties .right-column button {
   display: block;
 }
-.screen-3 .properties .right-column .old-price {
+.screen-5 .properties .right-column .old-price {
   margin-top: 10%;
 }
-.screen-3 .properties .right-column .old-price .overlined {
+.screen-5 .properties .right-column .old-price .overlined {
   text-decoration: line-through;
 }
-.screen-3 .properties .right-column .new-price {
+.screen-5 .properties .right-column .new-price {
   margin-top: 2%;
   font-size: 6em;
   color: #910000;
 }
-.screen-3 .properties .right-column button {
+.screen-5 .properties .right-column button {
   margin: 20% auto 0 auto;
   font-size: 2em;
 }
-.screen-4 {
+.screen-6 {
   padding: 0;
   height: 70%;
   background-image: url("../images/benefits_bg.jpg");
@@ -3318,13 +3464,13 @@ body {
   -moz-background-size: cover;
   background-size: cover;
 }
-.screen-4 .overlay {
+.screen-6 .overlay {
   position: relative;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.4);
 }
-.screen-4 .benefits {
+.screen-6 .benefits {
   padding: 1.5% 1.5% 1.5% 50px;
   width: 60%;
   -webkit-border-radius: 70px;
@@ -3336,7 +3482,7 @@ body {
   bottom: 2%;
   left: 20%;
 }
-.screen-4 .benefits li {
+.screen-6 .benefits li {
   list-style-image: url("../images/mark.png");
 }
 @media (max-width: 768px) {
@@ -3346,25 +3492,25 @@ body {
     font-size: 1em !important;
   }
 }
-.screen-5 h1 {
+.screen-7 h1 {
   text-align: center;
   margin-top: 5%;
 }
-.screen-5 center {
+.screen-7 center {
   font-size: 1.5em;
 }
-.screen-5 center form table {
+.screen-7 center form table {
   margin: 10% 0 5% 0;
 }
-.screen-5 center form table td {
+.screen-7 center form table td {
   padding: 0.5em;
 }
-.screen-5 center form table td input {
+.screen-7 center form table td input {
   display: inline-block;
   width: 100%;
   padding: 0.2em;
 }
-.screen-5 center button {
+.screen-7 center button {
   margin-top: 7%;
   margin-bottom: 7%;
 }

@@ -45,16 +45,15 @@ body
 	background #eae8eb
 body
 	background-image url(../images/bg.jpg)
-	background-position 50% 50%
+	background-position 50% 40%
 	background-attachment fixed
 	background-repeat no-repeat
 	background-size cover
 .screen-1
 	background transparent
 	padding 0
-	height 100%
 	.overlay
-		padding 2%
+		padding 2% 5%
 		width 100%
 		height 100%
 		background rgba(black, 0.4)
@@ -68,23 +67,122 @@ body
 				span
 					margin-left 5%
 			.header-info-right
+				height 100%
 				text-align center
 				span
+					display inline-block
 					font-weight bold
-				button
-					margin-top 5%
-		.title
-			text-align center
-			relative top 30%
-			text-shadow 1px 1px 1px #262527
+					margin-top 12%
+		.header
+			.heading
+				font-weight bold
+				color white
+				font-size 5em
+				margin-top 5%
+				text-shadow 1px 1px 1px #262527
+				text-align center
+			.video-wrapper
+				margin-top 7%
+				height 300px
+				border-radius 7px
+				display block
+				background rgba(black, 0.5)
+			.header-form-wrapper
+				margin-top 7%
+				text-align center
+				background d-white
+				border-radius 7px
+				table
+					font-size 1.25em
+					width 100%
+					margin 7% 0 5% 0
+					td
+						text-align left
+						padding 0.2em
+						width 50%
+						input
+						option
+							display inline-block
+							width 100%
+							padding 0.2em
+				.header-form-order
+					@extend .order
+					margin 5% 0
+					font-size 1.25em
+.screen-2
+	h1
+		text-align center
+	.properties
+		margin 10% 0
+		text-align center
+		div
+			img
+				width 30%
 			span
 				display block
-				color white
-			.main-title
-				font-size 4em
-			.secondary-title
-				font-size 1.5em
-/*.screen-2
+				margin-top 5%
+				font-size 1.25em
+	.divider
+		margin-top 0
+@media(max-width 990px)
+	.properties
+		div
+			margin-top 10%
+			img
+				width 20% !important
+.screen-3
+	position relative
+	h1
+		text-align center
+	.desc
+		position relative
+		height 100%
+		margin 5% 0
+		.desc-img
+			overflow hidden
+			img
+				width 100%
+		.hidden-md.hidden-lg
+			span
+				display block
+				margin-top 5%
+				text-align center
+				font-size 1.25em
+		.desc-text
+			position relative
+			height 100%
+			span
+				position absolute
+				display block
+				font-size 1.25em
+				text-align center
+				&.desc-text-1
+				&.desc-text-2
+					top 20%
+				&.desc-text-3
+				&.desc-text-4
+					top 60%
+		.line
+			width 22.5%
+			z-index 2
+			height 2px
+			background #262725
+			&-1
+				absolute top 30% left 22.5%
+				transform rotateZ(15deg)
+			&-2
+				absolute top 30% right 22.5%
+				transform rotateZ(-15deg)
+			&-3
+				absolute top 60% left 22.5%
+				transform rotateZ(-15deg)
+			&-4
+				absolute top 60% right 22%
+				transform rotateZ(15deg)
+	.divider
+		width 100%
+		absolute bottom 0
+.screen-4
 	.pad-price
 		margin-top 5%
 		.pad-image
@@ -142,7 +240,7 @@ body
 			margin-top 10%
 			img
 				width 20% !important
-.screen-3
+.screen-5
 	h1
 		text-align center
 		margin 8% 0
@@ -191,7 +289,7 @@ body
 			button
 				margin 20% auto 0 auto
 				font-size 2em
-.screen-4
+.screen-6
 	padding 0
 	height 70%
 	background-image url(../images/benefits_bg.jpg)
@@ -218,7 +316,7 @@ body
 		left 0 !important
 		width 100% !important
 		font-size 1em !important
-.screen-5
+.screen-7
 	h1
 		text-align center
 		margin-top 5%
@@ -235,4 +333,3 @@ body
 		button
 			margin-top 7%
 			margin-bottom 7%
-*/
