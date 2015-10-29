@@ -1,0 +1,666 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"newPassword"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"gr",
+				"grid-float-breakpoint"
+			],
+			[
+				"dis",
+				"discount"
+			],
+			[
+				"discount",
+				"discountEndDate"
+			],
+			[
+				"discountEndTime",
+				"discountEndTimeMinutes"
+			],
+			[
+				"a",
+				"admin.css"
+			],
+			[
+				"s",
+				"styles/"
+			],
+			[
+				"or",
+				"originalPrice"
+			],
+			[
+				"de",
+				"delievery-desc"
+			],
+			[
+				"timer",
+				"timerUpdate"
+			],
+			[
+				"di",
+				"discountEndTime"
+			],
+			[
+				"disco",
+				"discountEndDate"
+			],
+			[
+				"tier",
+				"timerInterval"
+			],
+			[
+				"d",
+				"discount"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"R",
+				"Roboto-Medium"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"co",
+				"container-fluid"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"p",
+				"purse-6.jpg	w:500 h:500"
+			],
+			[
+				"video",
+				"videoRunning"
+			],
+			[
+				"tr",
+				"triangle"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"vide",
+				"videoResettingDelay"
+			],
+			[
+				"desc",
+				"desc-wrapper"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"screen-",
+				"screen-sm-min"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"order",
+				"order-box"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"container",
+				"container-fluid"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"c",
+				"collapse.js"
+			],
+			[
+				"discount-",
+				"discount-percent"
+			],
+			[
+				"border-",
+				"border-radius	styl"
+			],
+			[
+				"lan",
+				"languages"
+			],
+			[
+				"l",
+				"language"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"_",
+				"_includes"
+			],
+			[
+				"la",
+				"languages_block"
+			],
+			[
+				"current",
+				"current_code"
+			],
+			[
+				"lang_",
+				"lang_disabled"
+			],
+			[
+				"tim",
+				"timeout_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/vlad/webdev/igloves.in.ua/index.jade",
+			"settings":
+			{
+				"buffer_size": 4579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/vlad/webdev/igloves.in.ua/styles/custom.styl",
+			"settings":
+			{
+				"buffer_size": 4014,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/vlad/webdev/igloves.in.ua/prepros.cfg",
+			"settings":
+			{
+				"buffer_size": 63460,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/vlad/webdev/igloves.in.ua/.hidden",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"repa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rep",
+				"Package Control: Remove Package"
+			],
+			[
+				"setini",
+				"Set Syntax: INI"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"sets	",
+				"Set Syntax: Stylus"
+			],
+			[
+				"e",
+				"Set Syntax: Emmet"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"setjad",
+				"Set Syntax: Jade"
+			],
+			[
+				"set",
+				"Set Syntax: Tcl"
+			]
+		],
+		"width": 552.0
+	},
+	"console":
+	{
+		"height": 152.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/vlad/webdev/igloves.in.ua",
+		"/home/vlad/webdev/igloves.in.ua/styles"
+	],
+	"file_history":
+	[
+		"/home/vlad/Робочий стіл/webdev/jarn.in.ua/_scripts/create.js",
+		"/home/vlad/Робочий стіл/webdev/jarn.in.ua/_scripts/localization/create/ru.js",
+		"/home/vlad/Робочий стіл/webdev/jarn.in.ua/_scripts/localization/create/en.js",
+		"/home/vlad/Робочий стіл/webdev/jarn.in.ua/_scripts/dict/be.txt",
+		"/home/vlad/Робочий стіл/webdev/jarn.in.ua/_scripts/localization/create/uk.js",
+		"/home/vlad/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/vlad/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 55.0
+	},
+	"find_in_files":
+	{
+		"height": 163.0,
+		"where_history":
+		[
+			"/home/vlad/Робочий стіл/2.8.9_0"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"html.",
+			"\\(html.(\\S*)\\)\\.",
+			"\\((html.\\S*)\\)\\.",
+			"миш",
+			"desc-bo",
+			"990",
+			"id=",
+			"=/",
+			"mail",
+			"white",
+			".col-lg-2.col-md-2.col-sm-3.col-xs-4",
+			"grid-float",
+			"grid",
+			"gray",
+			"  ",
+			":",
+			";",
+			"$",
+			"overl",
+			"right_row",
+			".left_row",
+			"-fluid",
+			"\\,\\n(\\t*)\\}",
+			"\\,\\n\\t*\\}",
+			"\\,\\n\\}",
+			"td",
+			"'_'",
+			"\"",
+			"auto",
+			"cookies",
+			"select_a",
+			"set=",
+			"kernel.language.set",
+			"choose",
+			"blocked",
+			"set(",
+			"localization",
+			"alert",
+			"evt.set",
+			"tab",
+			"prev",
+			"show_test",
+			"hint.",
+			"hint",
+			"z-index",
+			"overla",
+			"toggle_",
+			"sb.",
+			"sb"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"('$1').",
+			"мыш",
+			"name=",
+			".col-xs-3",
+			"d-gray",
+			" ",
+			"",
+			"right-row",
+			"",
+			"\\n$1\\}",
+			"\\n}",
+			"'",
+			"disabled"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/vlad/webdev/igloves.in.ua/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/vlad/webdev/igloves.in.ua/styles/custom.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4014,
+								4014
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3860.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/vlad/webdev/igloves.in.ua/prepros.cfg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/INI/INI.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/vlad/webdev/igloves.in.ua/.hidden",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							],
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "igloves.sublime-project",
+	"replace":
+	{
+		"height": 106.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Робочий стіл/webdev/jarn.in.ua/jarn.in.ua.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 156.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
