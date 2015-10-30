@@ -1,34 +1,42 @@
 var order;
 
-$(document).ready(function(){
+$(document).ready(function(){//Order module
 	jQuery(function($){
-		$("#phone").mask("+38 (099) 99-99-999");
+		$("#phone, #special-phone").mask("+38 (099) 99-99-999");
 	});
 
-	$('#order').click(function(){
-		if($('#name').val() !== '' && $('#phone').val() !== '' && $('#surname').val() !== ''){
+	$('#order, #special-order').click(function(){
+		var prefix='';
+		if(this.id === 'special-order') prefix='special-';
+
+		if($('#'+prefix+'name').val() !== '' && $('#'+prefix+'phone').val() !== '' && $('#'+prefix+'surname').val() !== ''){
 			alert('Спасибо, Ваш заказ принят!');
-			//yaCounter32302234.reachGoal('order');
-			$('#form').submit();
+			$('#'+prefix+'form').submit();
 		}
 		else{
 			alert('Заполните все поля формы.');
 		}
 	});
-
 	order=function(){
 		$('body').animate({'scrollTop': $('#order-screen').offset().top}, 500);
 	};
+	$('.order:not("#special-order")').click(order);
 
-	$('.order').click(order);
-	var newPrice=parseInt((originalPrice-(originalPrice/100)*discount), 10);
+	if(originalPrice.slice(0, 2) === '<?') originalPrice='250';
+	if(discount.slice(0, 2) === '<?') discount='30';
+	if(newPrice.slice(0, 2) === '<?') newPrice='179';
+	if(newPrice === '') newPrice=parseInt((originalPrice-(originalPrice/100)*discount), 10);
+	originalPrice=parseFloat(originalPrice);
+	discount=parseFloat(discount);
+	newPrice=parseFloat(newPrice);
 	$('.original-price-value').html(originalPrice);
-	$('.new-price-value').html(newPrice);
 	$('.discount-value').html(discount);
+	$('.new-price-value').html(newPrice);
 });
 
 $(document).ready(function(){
 	setTimeout(function(){
 		$('.desc-text').css('height', $('.desc-img').height()+'px');
+		//$('.video').css('height', $('.header-form-wrapper').height());
 	}, 500);
 });

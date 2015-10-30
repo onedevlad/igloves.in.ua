@@ -6,6 +6,7 @@
 	padding 0
 
 .order
+	border-radius 2px
 	color white
 	background red
 	outline none
@@ -74,40 +75,84 @@ body
 					font-weight bold
 					margin-top 12%
 		.header
-			.heading
-				font-weight bold
+			h1
 				color white
+				text-align center
 				font-size 5em
-				margin-top 5%
-				text-shadow 1px 1px 1px #262527
-				text-align center
-			.video-wrapper
-				margin-top 7%
-				height 300px
+				text-shadow 1px 1px 1px #262725
+		.order-box-wrapper
+			font-size 0.9em
+			position relative
+			text-shadow none
+			margin-top 5%
+			.desc-box
+				padding 15px 0 0 0
 				border-radius 7px
-				display block
-				background rgba(black, 0.5)
-			.header-form-wrapper
-				margin-top 7%
-				text-align center
+				h3
+					text-shadow 1px 1px 1px #262725
+					color white
+					font-size 2em
+					text-align center
+					margin 0 0 10% 0
+				.video
+					height 305px
+					border-radius 7px
+					background rgba(black, 0.75)
+			.order-box
+				border-radius 7px
+				padding 15px
 				background d-white
-				border-radius 7px
-				table
+				.discount
+					width 30%
+					absolute left -10% top -10%
+					.discount-img
+						width 100%
+					.discount-text
+						z-index 2
+						display inline-block
+						absolute top 35%
+						width 100%
+						color white
+						font-size 1.75em
+						text-align center
+						vertical-align middle
+				h3
+					font-size 2em
+					margin-top 0
+					text-align center
+					color d-gray
+				.original-price
+					margin-top 5%
+					color gray
+					display block
+					text-align center
 					font-size 1.25em
-					width 100%
-					margin 7% 0 5% 0
+					text-decoration line-through
+				.new-price
+					display block
+					text-align center
+					font-size 1.5em
+					color d-red
+				hr
+					margin-top 7%
+					height 1px
+					background #262725
+					color #262725
+					border none
+				table
+					// margin-top -5%
+					width 100% !important
 					td
-						text-align left
-						padding 0.2em
-						width 50%
+						padding 0.5em
 						input
-						option
+						select
+							padding 0.3em
+						input
 							display inline-block
 							width 100%
-							padding 0.2em
-				.header-form-order
-					@extend .order
-					margin 5% 0
+				.order
+					display block
+					margin 7% auto 0 auto
 					font-size 1.25em
 .screen-2
 	h1
@@ -179,6 +224,10 @@ body
 			&-4
 				absolute top 60% right 22%
 				transform rotateZ(15deg)
+	.order
+		font-size 2em
+		display block
+		margin 5% auto
 	.divider
 		width 100%
 		absolute bottom 0

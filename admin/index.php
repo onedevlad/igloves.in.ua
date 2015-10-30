@@ -50,7 +50,15 @@
 								Процент скидки (в зависимости от этого значения считается новая цена товара):
 							</td>
 							<td>
-								<input type='number' name='discount-percent' value="<?php echo $parsed['discount'];?>"> %
+								<input type='number' name='discount-percent' value="<?php echo $parsed['discount-percent'];?>"> %
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Новая цена:
+							</td>
+							<td>
+								<input type='number' name='new-price' value="<?php echo $parsed['new-price'];?>"> грн
 							</td>
 						</tr>
 						<tr>
@@ -74,10 +82,12 @@
 		?>
 		<?php
 			$originalPrice=$_POST['original-price'];
+			$newPrice=$_POST['new-price'];
 			$discount=$_POST['discount-percent'];
 			$mail=$_POST['mail'];
-			if(!isset($_POST['original-price'])) $originalPrice='100';
-			if(!isset($_POST['discount-percent'])) $discount='65';
+			$newPassword=$_POST['new-password'];
+			if(!isset($_POST['original-price'])) $originalPrice='250';
+			if(!isset($_POST['discount-percent'])) $discount='30';
 			if(isset($_POST['mail']) && isset($_POST['new-password'])){
 				if($parsed['mail'] !== $mail){
 					mail($parsed['mail'], 'Уведомление stickymp!', "E-mail приема заказов был изменен на: $mail", "Content-type: text/plain; charset=utf-8");
@@ -86,6 +96,7 @@
 				$arr=array(
 					'mail' => $mail,
 					'original-price' => $originalPrice,
+					'new-price' => $newPrice,
 					'discount-percent' => $discount,
 				);
 				$newJSON=json_encode($arr);
@@ -95,8 +106,10 @@
 				$fp1 = fopen(dirname($_SERVER['SCRIPT_FILENAME']).'/password.txt', 'w');
 				fwrite($fp1, md5($newPassword));
 				fclose($fp1);
-				mail($_POST['mail'], 'Уведомление от stickymp!', "Пароль аккаунта админ-панели сменен: $newPassword", "Content-type: text/plain; charset=utf-8");
-				echo "<br/>На почту <b>".$_POST['mail']."</b> было отправлено уведомление о смене пароля.";
+				if($f !== md5($newPassword)){
+					mail($_POST['mail'], 'Уведомление от stickymp!', "Пароль аккаунта админ-панели сменен: $newPassword", "Content-type: text/plain; charset=utf-8");
+					echo "<br/>На почту <b>".$_POST['mail']."</b> было отправлено уведомление о смене пароля.";
+				}
 			}
 		?>
 		</div>

@@ -3069,8 +3069,9 @@ input[type="button"].btn-block {
   margin: 0;
   padding: 0;
 }
-.order,
-.screen-1 .overlay .header .header-form-wrapper .header-form-order {
+.order {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   color: #fff;
   background: #c30000;
   outline: none;
@@ -3078,8 +3079,7 @@ input[type="button"].btn-block {
   padding: 0.5em 0.8em;
   text-shadow: 1px 1px 1px #262527;
 }
-.order:hover,
-.screen-1 .overlay .header .header-form-wrapper .header-form-order:hover {
+.order:hover {
   background: #910000;
 }
 .divider {
@@ -3158,47 +3158,106 @@ body {
   font-weight: bold;
   margin-top: 12%;
 }
-.screen-1 .overlay .header .heading {
-  font-weight: bold;
+.screen-1 .overlay .header h1 {
   color: #fff;
+  text-align: center;
   font-size: 5em;
+  text-shadow: 1px 1px 1px #262725;
+}
+.screen-1 .overlay .order-box-wrapper {
+  font-size: 0.9em;
+  position: relative;
+  text-shadow: none;
   margin-top: 5%;
-  text-shadow: 1px 1px 1px #262527;
-  text-align: center;
 }
-.screen-1 .overlay .header .video-wrapper {
-  margin-top: 7%;
-  height: 300px;
+.screen-1 .overlay .order-box-wrapper .desc-box {
+  padding: 15px 0 0 0;
   -webkit-border-radius: 7px;
   border-radius: 7px;
-  display: block;
-  background: rgba(0,0,0,0.5);
 }
-.screen-1 .overlay .header .header-form-wrapper {
-  margin-top: 7%;
+.screen-1 .overlay .order-box-wrapper .desc-box h3 {
+  text-shadow: 1px 1px 1px #262725;
+  color: #fff;
+  font-size: 2em;
   text-align: center;
+  margin: 0 0 10% 0;
+}
+.screen-1 .overlay .order-box-wrapper .desc-box .video {
+  height: 305px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background: rgba(0,0,0,0.75);
+}
+.screen-1 .overlay .order-box-wrapper .order-box {
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  padding: 15px;
   background: #e6e6e6;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
 }
-.screen-1 .overlay .header .header-form-wrapper table {
-  font-size: 1.25em;
+.screen-1 .overlay .order-box-wrapper .order-box .discount {
+  width: 30%;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+}
+.screen-1 .overlay .order-box-wrapper .order-box .discount .discount-img {
   width: 100%;
-  margin: 7% 0 5% 0;
 }
-.screen-1 .overlay .header .header-form-wrapper table td {
-  text-align: left;
-  padding: 0.2em;
-  width: 50%;
+.screen-1 .overlay .order-box-wrapper .order-box .discount .discount-text {
+  z-index: 2;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  color: #fff;
+  font-size: 1.75em;
+  text-align: center;
+  vertical-align: middle;
 }
-.screen-1 .overlay .header .header-form-wrapper table td input,
-.screen-1 .overlay .header .header-form-wrapper table td option {
+.screen-1 .overlay .order-box-wrapper .order-box h3 {
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+  color: #262527;
+}
+.screen-1 .overlay .order-box-wrapper .order-box .original-price {
+  margin-top: 5%;
+  color: #333;
+  display: block;
+  text-align: center;
+  font-size: 1.25em;
+  text-decoration: line-through;
+}
+.screen-1 .overlay .order-box-wrapper .order-box .new-price {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  color: #910000;
+}
+.screen-1 .overlay .order-box-wrapper .order-box hr {
+  margin-top: 7%;
+  height: 1px;
+  background: #262725;
+  color: #262725;
+  border: none;
+}
+.screen-1 .overlay .order-box-wrapper .order-box table {
+  width: 100% !important;
+}
+.screen-1 .overlay .order-box-wrapper .order-box table td {
+  padding: 0.5em;
+}
+.screen-1 .overlay .order-box-wrapper .order-box table td input,
+.screen-1 .overlay .order-box-wrapper .order-box table td select {
+  padding: 0.3em;
+}
+.screen-1 .overlay .order-box-wrapper .order-box table td input {
   display: inline-block;
   width: 100%;
-  padding: 0.2em;
 }
-.screen-1 .overlay .header .header-form-wrapper .header-form-order {
-  margin: 5% 0;
+.screen-1 .overlay .order-box-wrapper .order-box .order {
+  display: block;
+  margin: 7% auto 0 auto;
   font-size: 1.25em;
 }
 .screen-2 h1 {
@@ -3313,6 +3372,11 @@ body {
   -o-transform: rotateZ(15deg);
   -ms-transform: rotateZ(15deg);
   transform: rotateZ(15deg);
+}
+.screen-3 .order {
+  font-size: 2em;
+  display: block;
+  margin: 5% auto;
 }
 .screen-3 .divider {
   width: 100%;

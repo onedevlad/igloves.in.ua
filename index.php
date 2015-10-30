@@ -2,7 +2,7 @@
 <?php $f=file_get_contents(dirname($_SERVER['SCRIPT_FILENAME']).'/scripts/config.json'); settype($f, 'string'); $parsed=json_decode($f, true);?>
 <?php if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['phone'])){mail($parsed['mail'], 'Новый заказ!', $_POST['surname'].' '.$_POST['name'].' (.'.$_POST['phone'].') заказал(а) stickypad!', "Content-type: text/plain; charset=utf-8");}?><!DOCTYPE html>
 <html lang="uk">
-  <head><script>var originalPrice=parseFloat('<?php echo $parsed["original-price"]; ?>') || 100; var discount=parseFloat('<?php echo $parsed["discount-percent"]; ?>');</script>
+  <head><script>var originalPrice='<?php echo $parsed["original-price"]; ?>'; var discount='<?php echo $parsed["discount-percent"]; ?>'; var newPrice='<?php echo $parsed["new-price"]; ?>';</script>
     <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/mask.js"></script>
@@ -21,34 +21,43 @@
           <div class="col-md-2 pull-right header-info-right"><span>+38 (066) 881 06 22</span></div>
         </div>
         <div class="row header">
-          <h1 class="heading">Заголовок</h1>
-          <div class="col-md-5 video-wrapper"></div>
-          <div class="col-md-4 col-md-offset-3 header-form-wrapper">
-            <form method="POST">
-              <h3>Закажите сейчас</h3>
+          <h1>Заголовок</h1>
+        </div>
+        <div class="row order-box-wrapper">
+          <div class="col-sm-5 desc-box">
+            <h3>Підзаголовок відео</h3>
+            <div class="video"></div>
+          </div>
+          <div class="col-sm-4 col-sm-push-3 order-box">
+            <div class="discount"><img src="images/discount.png" alt="" class="discount-img">
+              <nobr class="discount-text">-<span class="discount-value">65</span>%</nobr>
+            </div>
+            <h3>Закажите сейчас</h3><span class="original-price"><span class="original-price-value"></span> грн</span><span class="new-price">Новая цена: <span class="new-price-value"></span> грн</span>
+            <hr>
+            <form id="special-form" method="POST">
               <table>
                 <tr>
-                  <td class="left">Ваше имя:</td>
-                  <td>
-                    <input name="name">
+                  <td class="left"><span>Ваше имя:</span></td>
+                  <td class="right">
+                    <input id="special-name" name="name" size="18">
                   </td>
                 </tr>
                 <tr>
-                  <td class="left">Ваша фамилия:</td>
-                  <td>
-                    <input name="surname">
+                  <td class="left"><span>Ваша фамилия:</span></td>
+                  <td class="right">
+                    <input id="special-surname" name="surname" size="18">
                   </td>
                 </tr>
                 <tr>
-                  <td class="left">Номер телефона:</td>
-                  <td>
-                    <input id="phone">
+                  <td class="left"><span>Номер телефона:</span></td>
+                  <td class="right">
+                    <input id="special-phone" name="phone" size="18">
                   </td>
                 </tr>
                 <tr>
-                  <td class="left">Цвет перчаток:</td>
-                  <td>
-                    <select name="color">
+                  <td class="left"><span>Цвет перчаток:</span></td>
+                  <td class="right">
+                    <select>
                       <option>Черный</option>
                       <option>Черный</option>
                       <option>Черный</option>
@@ -58,8 +67,8 @@
                   </td>
                 </tr>
               </table>
-              <button class="header-form-order">Заказать сейчас</button>
             </form>
+            <button id="special-order" class="order">Заказать!</button>
           </div>
         </div>
       </div>
@@ -83,7 +92,7 @@
       </div>
     </div>
     <div class="container-fluid screen-3">
-      <h1>Характеристики перчаток</h1>
+      <h1>Характеристики</h1>
       <div class="row desc">
         <div class="hidden-xs hidden-sm line line-1"></div>
         <div class="hidden-xs hidden-sm line line-2"></div>
@@ -94,6 +103,7 @@
         <div class="col-sm-3 hidden-xs hidden-sm desc-text"><span class="desc-text-2">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-4">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div>
         <div class="col-xs-12 hidden-md hidden-lg"><span class="desc-text-1">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-2">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-3">Lorem ipsum dolor sit amet, consectetur adipisicing</span><span class="desc-text-4">Lorem ipsum dolor sit amet, consectetur adipisicing</span></div>
       </div>
+      <button class="order">Заказать сейчас!</button>
       <div class="row divider">
         <div class="col-lg-12">
           <div class="left"></div>
