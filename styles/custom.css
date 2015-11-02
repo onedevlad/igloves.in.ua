@@ -3158,10 +3158,19 @@ body {
   font-weight: bold;
   margin-top: 12%;
 }
+.screen-1 .overlay .divider {
+  margin-top: 3%;
+}
+.screen-1 .overlay .divider .left,
+.screen-1 .overlay .divider .inner,
+.screen-1 .overlay .divider .right {
+  background: #fff !important;
+}
 .screen-1 .overlay .header h1 {
   color: #fff;
   text-align: center;
   font-size: 5em;
+  margin: 5% 0;
   text-shadow: 1px 1px 1px #262725;
 }
 .screen-1 .overlay .order-box-wrapper {
@@ -3314,10 +3323,10 @@ body {
   height: 100%;
 }
 .screen-3 .desc .desc-text span {
+  width: 100%;
   position: absolute;
   display: block;
   font-size: 1.25em;
-  text-align: center;
 }
 .screen-3 .desc .desc-text span.desc-text-1,
 .screen-3 .desc .desc-text span.desc-text-2 {
@@ -3325,7 +3334,17 @@ body {
 }
 .screen-3 .desc .desc-text span.desc-text-3,
 .screen-3 .desc .desc-text span.desc-text-4 {
-  top: 60%;
+  top: 68%;
+}
+.screen-3 .desc .desc-text span.desc-text-1,
+.screen-3 .desc .desc-text span.desc-text-3 {
+  padding-right: 20%;
+  text-align: right;
+}
+.screen-3 .desc .desc-text span.desc-text-2,
+.screen-3 .desc .desc-text span.desc-text-4 {
+  padding-left: 10%;
+  text-align: left;
 }
 .screen-3 .desc .line {
   width: 22.5%;
@@ -3379,144 +3398,41 @@ body {
   margin: 5% auto;
 }
 .screen-3 .divider {
+  margin: 2% 0;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-.screen-4 .pad-price {
-  margin-top: 5%;
-}
-.screen-4 .pad-price .pad-image .pad {
-  width: 80%;
-}
-.screen-4 .pad-price .pad-image .discount {
-  width: 30%;
-  position: absolute;
-  right: 5%;
-  top: 10%;
-}
-.screen-4 .pad-price .pad-image .discount .discount-img {
+.screen-4 .description-title h1 {
   width: 100%;
-}
-.screen-4 .pad-price .pad-image .discount .discount-text {
-  z-index: 2;
   display: inline-block;
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-  vertical-align: middle;
-}
-.screen-4 .pad-price .pad-text {
   text-align: center;
 }
-.screen-4 .pad-price .pad-text .old-price,
-.screen-4 .pad-price .pad-text .new-price,
-.screen-4 .pad-price .pad-text button {
-  display: block;
-}
-.screen-4 .pad-price .pad-text .old-price {
-  margin-top: 20%;
-  font-size: 1.25em;
-}
-.screen-4 .pad-price .pad-text .old-price .overlined {
-  text-decoration: line-through;
-}
-.screen-4 .pad-price .pad-text .new-price {
-  margin-top: 2%;
-  font-size: 6em;
-  color: #910000;
-}
-.screen-4 .pad-price .pad-text button {
-  margin: 20% auto 0 auto;
-  font-size: 2em;
-}
-.screen-4 .work-description-title {
-  margin-top: 125px;
-}
-.screen-4 .work-description-title h1 {
+.screen-4 .description {
+  margin: 10% 0;
   text-align: center;
 }
-.screen-4 .work-description {
-  margin-top: 5%;
-  text-align: center;
-}
-.screen-4 .work-description div img {
+.screen-4 .description div img {
   width: 30%;
 }
-.screen-4 .work-description div span {
+.screen-4 .description div span {
   display: block;
   margin-top: 5%;
-  font-size: 1.25em;
+  font-size: 1.5em;
+}
+.screen-4 .divider {
+  margin: 2% 0;
 }
 @media (max-width: 768px) {
-  .work-description div {
+  .description div {
     margin-top: 10%;
   }
-  .work-description div img {
+  .description div img {
     width: 20% !important;
   }
 }
 .screen-5 h1 {
   text-align: center;
-  margin: 8% 0;
-}
-.screen-5 .properties {
-  margin-bottom: 15%;
-}
-.screen-5 .properties .left-column h3,
-.screen-5 .properties .right-column h3 {
-  text-align: center;
-  font-weight: bold;
-}
-.screen-5 .properties .left-column table {
-  margin: 10% 5% 0 5%;
-  width: 90%;
-  font-size: 1.5em;
-}
-.screen-5 .properties .left-column table td {
-  padding: 0.5em 0;
-}
-.screen-5 .properties .left-column h5 {
-  margin: 12% 10% 8% 10%;
-  width: 80%;
-  font-size: 1.25em;
-  line-height: 200%;
-  font-weight: bold;
-  text-align: center;
-}
-.screen-5 .properties .left-column ul {
-  line-height: 2em;
-  margin-left: 30px;
-  font-size: 1.1em;
-}
-.screen-5 .properties .middle-column img {
-  width: 100%;
-}
-.screen-5 .properties .right-column {
-  text-align: center;
-}
-.screen-5 .properties .right-column .old-price,
-.screen-5 .properties .right-column .new-price,
-.screen-5 .properties .right-column button {
-  display: block;
-}
-.screen-5 .properties .right-column .old-price {
-  margin-top: 10%;
-}
-.screen-5 .properties .right-column .old-price .overlined {
-  text-decoration: line-through;
-}
-.screen-5 .properties .right-column .new-price {
-  margin-top: 2%;
-  font-size: 6em;
-  color: #910000;
-}
-.screen-5 .properties .right-column button {
-  margin: 20% auto 0 auto;
-  font-size: 2em;
 }
 .screen-6 {
   padding: 0;

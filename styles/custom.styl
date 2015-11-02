@@ -74,11 +74,18 @@ body
 					display inline-block
 					font-weight bold
 					margin-top 12%
+		.divider
+			margin-top 3%
+			.left
+			.inner
+			.right
+				background white !important
 		.header
 			h1
 				color white
 				text-align center
 				font-size 5em
+				margin 5% 0
 				text-shadow 1px 1px 1px #262725
 		.order-box-wrapper
 			font-size 0.9em
@@ -197,16 +204,24 @@ body
 			position relative
 			height 100%
 			span
+				width 100%
 				position absolute
 				display block
 				font-size 1.25em
-				text-align center
 				&.desc-text-1
 				&.desc-text-2
 					top 20%
 				&.desc-text-3
 				&.desc-text-4
-					top 60%
+					top 68%
+				&.desc-text-1
+				&.desc-text-3
+					padding-right 20%
+					text-align right
+				&.desc-text-2
+				&.desc-text-4
+					padding-left 10%
+					text-align left
 		.line
 			width 22.5%
 			z-index 2
@@ -229,52 +244,17 @@ body
 		display block
 		margin 5% auto
 	.divider
+		margin 2% 0
 		width 100%
 		absolute bottom 0
 .screen-4
-	.pad-price
-		margin-top 5%
-		.pad-image
-			.pad
-				width 80%
-			.discount
-				width 30%
-				absolute right 5% top 10%
-				.discount-img
-					width 100%
-				.discount-text
-					z-index 2
-					display inline-block
-					absolute top 30%
-					width 100%
-					color white
-					font-size 1.5em
-					text-align center
-					vertical-align middle
-		.pad-text
-			text-align center
-			.old-price
-			.new-price
-			button
-				display block
-			.old-price
-				margin-top 20%
-				font-size 1.25em
-				.overlined
-					text-decoration line-through
-			.new-price
-				margin-top 2%
-				font-size 6em
-				color d-red
-			button
-				margin 20% auto 0 auto
-				font-size 2em
-	.work-description-title
-		margin-top 125px
+	.description-title
 		h1
+			width 100%
+			display inline-block
 			text-align center
-	.work-description
-		margin-top 5%
+	.description
+		margin 10% 0
 		text-align center
 		div
 			img
@@ -282,9 +262,11 @@ body
 			span
 				display block
 				margin-top 5%
-				font-size 1.25em
+				font-size 1.5em
+	.divider
+		margin 2% 0
 @media(max-width $grid-float-breakpoint)
-	.work-description
+	.description
 		div
 			margin-top 10%
 			img
@@ -292,52 +274,6 @@ body
 .screen-5
 	h1
 		text-align center
-		margin 8% 0
-	.properties
-		margin-bottom 15%
-		.left-column
-		.right-column
-			h3
-				text-align center
-				font-weight bold
-		.left-column
-			table
-				margin 10% 5% 0 5%
-				width 90%
-				font-size 1.5em
-				td
-					padding 0.5em 0
-			h5
-				margin 12% 10% 8% 10%
-				width 80%
-				font-size 1.25em
-				line-height 200%
-				font-weight bold
-				text-align center
-			ul
-				line-height 2em
-				margin-left 30px
-				font-size 1.1em
-		.middle-column
-			img
-				width 100%
-		.right-column
-			text-align center
-			.old-price
-			.new-price
-			button
-				display block
-			.old-price
-				margin-top 10%
-				.overlined
-					text-decoration line-through
-			.new-price
-				margin-top 2%
-				font-size 6em
-				color d-red
-			button
-				margin 20% auto 0 auto
-				font-size 2em
 .screen-6
 	padding 0
 	height 70%
