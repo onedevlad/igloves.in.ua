@@ -55,6 +55,14 @@
 						</tr>
 						<tr>
 							<td>
+								Специальное предложение (цена на вторую пару):
+							</td>
+							<td>
+								<input type='number' name='special-suggestion' value="<?php echo $parsed['special-suggestion'];?>"> грн
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Новая цена:
 							</td>
 							<td>
@@ -84,6 +92,7 @@
 			$originalPrice=$_POST['original-price'];
 			$newPrice=$_POST['new-price'];
 			$discount=$_POST['discount-percent'];
+			$specialSuggestion=$_POST['special-suggestion'];
 			$mail=$_POST['mail'];
 			$newPassword=$_POST['new-password'];
 			if(!isset($_POST['original-price'])) $originalPrice='250';
@@ -98,6 +107,7 @@
 					'original-price' => $originalPrice,
 					'new-price' => $newPrice,
 					'discount-percent' => $discount,
+					'special-suggestion' => $specialSuggestion,
 				);
 				$newJSON=json_encode($arr);
 				$fp = fopen(dirname($_SERVER['SCRIPT_FILENAME']).'/../scripts/config.json', 'w');

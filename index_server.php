@@ -1,7 +1,6 @@
 
 <?php $f=file_get_contents(dirname($_SERVER['SCRIPT_FILENAME']).'/scripts/config.json'); settype($f, 'string'); $parsed=json_decode($f, true);?>
-<?php if(isset($_POST['name']) && isset($_POST['surname'] && isset($_POST['color'])) && isset($_POST['phone'])){mail($parsed['mail'], 'Новый заказ (iGlove)!', $_POST['surname'].' '.$_POST['name'].' (.'.$_POST['phone'].') заказал(а) iGlove, цвет: '.$_POST['color'].'!', "Content-type: text/plain; charset=utf-8");}?>
-<?php echo $_POST['surname'].' '.$_POST['name'].' (.'.$_POST['phone'].') заказал(а) iGlove, цвет: '.$_POST['color'].'!'; ?><!DOCTYPE html>
+<?php if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['phone']) && isset($_POST['color'])){mail($parsed['mail'], 'Новый заказ (iGlove)!', $_POST['surname'].' '.$_POST['name'].' (.'.$_POST['phone'].') заказал(а) iGlove, цвет: '.$_POST['color'].'.', "Content-type: text/plain; charset=utf-8");}?><!DOCTYPE html>
 <html lang="uk">
   <head><script>var originalPrice='<?php echo $parsed["original-price"]; ?>'; var discount='<?php echo $parsed["discount-percent"]; ?>'; var newPrice='<?php echo $parsed["new-price"]; ?>'; var specialSuggestionPrice='<?php echo $parsed["special-suggestion"]; ?>';</script>
     <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>

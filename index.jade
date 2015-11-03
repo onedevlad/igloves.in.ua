@@ -1,9 +1,9 @@
 <?php $f=file_get_contents(dirname($_SERVER['SCRIPT_FILENAME']).'/scripts/config.json'); settype($f, 'string'); $parsed=json_decode($f, true);?>
-<?php if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['phone'])){mail($parsed['mail'], 'Новый заказ!', $_POST['surname'].' '.$_POST['name'].' (.'.$_POST['phone'].') заказал(а) stickypad!', "Content-type: text/plain; charset=utf-8");}?>
+<?php if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['phone']) && isset($_POST['color'])){mail($parsed['mail'], 'Новый заказ (iGlove)!', $_POST['surname'].' '.$_POST['name'].' (.'.$_POST['phone'].') заказал(а) iGlove, цвет: '.$_POST['color'].'.', "Content-type: text/plain; charset=utf-8");}?>
 doctype
 html(lang="uk")
 	head
-		<script>var originalPrice='<?php echo $parsed["original-price"]; ?>'; var discount='<?php echo $parsed["discount-percent"]; ?>'; var newPrice='<?php echo $parsed["new-price"]; ?>';</script>
+		<script>var originalPrice='<?php echo $parsed["original-price"]; ?>'; var discount='<?php echo $parsed["discount-percent"]; ?>'; var newPrice='<?php echo $parsed["new-price"]; ?>'; var specialSuggestionPrice='<?php echo $parsed["special-suggestion"]; ?>';</script>
 		script(type="text/javascript", async="", src="https://mc.yandex.ru/metrika/watch.js")
 		script(src='scripts/jquery.js')
 		script(src='scripts/mask.js')
@@ -35,7 +35,7 @@ html(lang="uk")
 				.row.order-box-wrapper
 					.col-sm-5.desc-box
 						h3 Пользоваться смартфоном в зимнее время стало удобнее!
-						.video
+						iframe.video(src="https://www.youtube.com/embed/xsp91M4ifz0", frameborder="0", allowfullscreen)
 					.col-sm-4.col-sm-push-3.order-box
 						.discount
 							img.discount-img(src="images/discount.png", alt="")
@@ -73,7 +73,7 @@ html(lang="uk")
 									td.left
 										span Цвет перчаток:
 									td.right
-										select
+										select(name='color')
 											option Черный
 											option Розовый
 											option Серый
@@ -165,6 +165,26 @@ html(lang="uk")
 					.left
 					.inner
 					.right
+		.container-fluid.screen-5
+			h1 1+1
+			.row
+				span.special-suggestion Цена на второю пару iGlove &mdash; всего 
+					span.red-selection
+						span.special-suggestion-price
+						| грн!
+			.row
+				.col-sm-5
+					img.img-left(src='images/black-left.png')
+				.col-sm-2.plus-sign
+					span +
+				.col-sm-5
+					img.img-right(src='images/black.png')
+			.row.divider
+				.col-lg-12
+					.left
+					.inner
+					.right
+		.container-fluid.screen-6
 			.row.description-title
 				h1.col-lg-12 Как мы работаем
 			.row.description
@@ -185,50 +205,8 @@ html(lang="uk")
 					.left
 					.inner
 					.right
-		.container-fluid.screen-5
-			h1 1+1
-			.row.properties
-				.col-md-4.left-column
-					h3 Харатеристика
-					table
-						tr
-							td Материал:
-							td.right-row силикон
-						tr
-							td Размер:
-							td.right-row 14см х 8см x 2.5мм
-						tr
-							td Цвета:
-							td.right-row черный, прозрачный
-					h5 Особенности противоскользящего наноковрика:
-					ul
-						li Подходит для любой приборной панели
-						li Многоразовое использование
-						li Коврик изготовлен без использования клейких материалов
-						li Коврик изготовлен без использования магнитов
-				.col-md-4.middle-column
-					img(src='images/tr_pad.png' alt='Sticky pad')
-				.col-md-4.right-column
-					h3 Распродажа!
-					img.arrow(src='images/arrow.png')
-					h5.old-price Старая цена:
-						span.overlined
-							span.original-price-value 100
-							span грн
-					span.new-price
-						span.new-price-value 35
-						span грн
-					button.order Заказать сейчас
-		.container-fluid.screen-6
-			.overlay
-				.benefits
-					ul
-						li Разработан учеными NASA для полетов в космос Sticky map очень практичен на панели автомобилей.
-						li Но он также подходит для кухни, ванной комнаты и для любых поверхностей.
-						li Вы можете не бояться, что коврик испачкается и потеряет свои свойства. Просто помойте «липкий» коврик , дайте ему просохнуть и он будет как новый!
-						li Наноковрик отлично подойдет для телефонов, ключей, очков и прочих предметов, которые ни в коем случаи не упадут во время езды.
 		.container-fluid.screen-7#order-screen
-			h1 Закажите коврик-липучку со скидкой
+			h1 Закажите iGloves со скидкой
 			center
 				form#form(method='post')
 					table
@@ -244,4 +222,13 @@ html(lang="uk")
 							td Номер телефона:
 							td
 								input#phone(type='text', autocomplete='off', name='phone')
+						tr
+							td.left
+								span Цвет перчаток:
+							td.right
+								select(name='color')
+									option Черный
+									option Розовый
+									option Серый
+									option Голубой
 				button#order.order Отправить заказ

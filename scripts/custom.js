@@ -25,6 +25,7 @@ $(document).ready(function(){//Order module
 	if(originalPrice.slice(0, 2) === '<?') originalPrice='250';
 	if(discount.slice(0, 2) === '<?') discount='30';
 	if(newPrice.slice(0, 2) === '<?') newPrice='179';
+	if(specialSuggestionPrice.slice(0, 2) === '<?') specialSuggestionPrice='120';
 	if(newPrice === '') newPrice=parseInt((originalPrice-(originalPrice/100)*discount), 10);
 	originalPrice=parseFloat(originalPrice);
 	discount=parseFloat(discount);
@@ -32,6 +33,7 @@ $(document).ready(function(){//Order module
 	$('.original-price-value').html(originalPrice);
 	$('.discount-value').html(discount);
 	$('.new-price-value').html(newPrice);
+	$('.special-suggestion-price').html(specialSuggestionPrice);
 });
 
 $(document).ready(function(){
